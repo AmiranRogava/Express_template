@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image and Audio Upload</title>
+</head>
+
+<body>
+    <h2>Image Upload</h2>
+    <input type="file" id="imageInput" />
+    <button id="uploadImageButton">Upload Image</button>
+
+    <h2>Audio Upload</h2>
+    <input type="file" id="audioInput" />
+    <button id="uploadAudioButton">Upload Audio</button>
+
+    <h2>Fetched Image</h2>
+    <div id="imageContainer"></div>
+
+    <h2>Fetched Audio</h2>
+    <div id="audioContainer">
+        <button id="btn" click="play()">Play</button>
+    </div>
+
+
+    <script src="/js/audio.js"></script>
+    <script src="/js/image.js"></script>
+</body>
+
+</html>

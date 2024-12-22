@@ -1,0 +1,39 @@
+
+
+> /user POST
+
+{
+  "user": {
+    "name": "John",
+    "surname": "Doe",
+    "email": "john.doe@example.com",
+    "password": "securePassword123",
+    "role": "user"
+  }
+}
+
+
+> /change_user POST
+
+{
+  "user": {
+    "name": "John",
+    "surname": "Doe",
+    "email": "john.doe@example.com",
+    "password": "123",
+    "role": "user"
+  },
+  "email": "john.doe@example.com",
+  "password": "securePassword123"
+
+
+
+}
+
+
+> /user/:id DELETE
+>/user/67549b3f0ff79ba797640704
+{
+  "email": "john.doe@example.com",
+  "password": "securePassword123"
+}
